@@ -27,10 +27,10 @@ const Listas = () => {
                 padding: '10px',
                 marginBottom: '20px',
                 width: '500px',
-                border: '1px solid #ccc',
+                border: '1px solid #144b21',
                 borderRadius: '7px',
-                backgroundColor: 'rgb(245, 245, 244)',
-                borderColor: 'rgb(232, 52, 16)',
+                backgroundColor: 'rgb(158, 208, 175)',
+                borderColor: 'rgb(14, 108, 44)',
             }}
              type="text" placeholder="Ingrese el nombre de la fruta que busca" 
              onChange={(e)=>{

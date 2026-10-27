@@ -14,7 +14,7 @@ const Cards = ({ nombre , imagen, onLike}) => {
       borderRadius: '5px',
       alignItems: 'center',
       textAlign: 'center',
-      borderColor: 'rgb(14, 113, 234)',
+      borderColor: 'rgb(49, 87, 193)',
 
 
     }}> 
@@ -24,7 +24,7 @@ const Cards = ({ nombre , imagen, onLike}) => {
         width: '100px',
         padding: '7px',
         margin: '10px',
-        backgroundColor: 'rgb(0, 221, 255)',
+        backgroundColor: 'rgba(11, 55, 27, 0.83)',
         border: 'none',
         borderRadius: '5px',
         color: 'white', 
@@ -37,7 +37,7 @@ const Cards = ({ nombre , imagen, onLike}) => {
 
         Like {likes}
       </button>
-      {likes >=3 && <p style={{color: 'rgb(232, 16, 128)',}}>¡Me encanta esta fruta!</p>}
+      {likes >=3 && <p style={{color: 'rgba(196, 21, 21, 0.92)',}}>¡Me encanta esta fruta!</p>}
     </div>
   );
 };
