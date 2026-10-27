@@ -37,6 +37,7 @@ const Cards = ({ nombre , imagen, onLike}) => {
 
         Like {likes}
       </button>
+      {likes >=3 && <p style={{color: 'rgb(232, 16, 128)',}}>¡Me encanta esta fruta!</p>}
     </div>
   );
 };

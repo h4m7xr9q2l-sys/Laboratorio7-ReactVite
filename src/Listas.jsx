@@ -9,6 +9,8 @@ const Listas = () => {
     ];
 
     const [total ,setTotal]=useState(0);
+    const [busqueda, setBusqueda] =useState("");
+    const frutasFiltradas = frutas.filter((fruta)=> fruta.nombre.toLowerCase().includes(busqueda.toLowerCase()));
 
     return (
         <div style={{
@@ -30,10 +32,17 @@ const Listas = () => {
                 backgroundColor: 'rgb(245, 245, 244)',
                 borderColor: 'rgb(232, 52, 16)',
             }}
-             tipe="text" placeholder="Ingrese el nombre de la fruta que busca" />
+             type="text" placeholder="Ingrese el nombre de la fruta que busca" 
+             onChange={(e)=>{
+                setBusqueda(e.target.value);
+             }} />
 
             <div style={{display: 'flex',}} >
-                {frutas.map((fruta) => {
+                {frutasFiltradas.length === 0 && <p style={{color: 'rgb(232, 16, 128)',
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                }}>No se encontraron frutas con el nombre: {busqueda}</p>}
+                {frutasFiltradas.map((fruta) => {
                     return (
                         <Cards 
                         key={fruta.id} 
