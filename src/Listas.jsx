@@ -20,7 +20,7 @@ const Listas = () => {
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            <h1>Total de likes de Frutas: {total}</h1>
+            <h1>TOTAL DE LIKES DE FRUTAS: {total}</h1>
 
             <input 
             style={{
